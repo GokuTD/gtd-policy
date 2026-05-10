@@ -17,4 +17,4 @@ We do not collect, transmit or sell any personal data. Everything you configure 
 
 ## Contact
 
-Questions or issues: <goku89edge@gmail.com>
+Questions or issues: <gokukinto@gmail.com>
