@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GTD TV Studio — Política de Privacidad</title>
+<style>
+  :root { --fg: #1a1a2e; --bg: #fafafa; --accent: #FFD27A; --muted: #555; --link: #0a64bf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e7e7ea; --bg: #14141a; --accent: #FFD27A; --muted: #b0b0b8; --link: #6db3ff; }
+  }
+  body { background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.55; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); padding-bottom: 16px; margin-bottom: 28px; }
+  header h1 { margin: 0 0 4px; font-size: 1.55rem; }
+  header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .lang { margin-top: 12px; font-size: 0.92rem; }
+  .lang a { margin-right: 12px; color: var(--link); text-decoration: none; }
+  .lang a.active { color: var(--fg); font-weight: 600; pointer-events: none; }
+  h2 { margin-top: 32px; font-size: 1.15rem; border-left: 3px solid var(--accent); padding-left: 10px; }
+  h3 { margin-top: 22px; font-size: 1rem; color: var(--muted); }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  code { background: color-mix(in srgb, var(--fg) 8%, transparent); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); vertical-align: top; }
+  th { font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); color: var(--muted); font-size: 0.85rem; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>GTD TV Studio — Política de Privacidad</h1>
+  <p>Fecha de entrada en vigor: 10 de mayo de 2026 · Última actualización: 10 de mayo de 2026</p>
+  <div class="lang">
+    <a href="index.html">English</a>
+    <a class="active" href="es.html">Español</a>
+  </div>
+</header>
+
+<p>Esta página cubre <strong>GTD Launcher</strong>, <strong>GTD Plugin for Emby</strong> y <strong>GTD Setup</strong> (en adelante, <em>"las apps"</em>), todas desarrolladas y publicadas por <strong>GTD TV Studio</strong>.</p>
+
+<p>Versión corta: <strong>no recogemos, transmitimos ni vendemos datos personales.</strong> Todo lo que configuras se queda en tu dispositivo. Las funciones opcionales que hablan con terceros (Google Drive, Emby, TMDB, APIs de fútbol) solo lo hacen cuando <em>tú</em> las activas, y tú controlas las credenciales.</p>
+
+<h2>1. Datos que recogemos sobre ti</h2>
+
+<p><strong>Ninguno.</strong> Las apps no tienen backend, telemetría, analítica, crash reporter, SDK publicitario ni sistema de cuentas. Nunca vemos lo que haces con ellas.</p>
+
+<h2>2. Datos que las apps guardan en tu dispositivo</h2>
+
+<table>
+  <tr><th>Qué</th><th>Dónde</th><th>Para qué</th></tr>
+  <tr><td>Preferencias del launcher (temas, layout, tamaños de banner, efectos de foco, orden de canales)</td><td>SharedPreferences locales en el almacenamiento privado de la app</td><td>Para que tu personalización persista entre arranques</td></tr>
+  <tr><td>URL del servidor Emby, usuario, token de acceso</td><td>DataStore cifrado en el almacenamiento privado del plugin</td><td>Para que el plugin pueda alcanzar <em>tu</em> servidor Emby</td></tr>
+  <tr><td>API keys que introduces (TMDB, football-data.org, api-football.com)</td><td>DataStore cifrado en el almacenamiento privado del plugin</td><td>Integraciones opcionales — ninguna activa hasta que pongas tus keys</td></tr>
+  <tr><td>IPs del reproductor Oppo / barra de sonido Samsung</td><td>SharedPreferences del plugin</td><td>Solo se usan si configuras la función de mando Oppo</td></tr>
+  <tr><td>Flag de compra Premium (booleano)</td><td>SharedPreferences</td><td>Cacheado para que la app sepa si mostrar paywalls. Reconciliado con Google Play en cada arranque</td></tr>
+</table>
+
+<p>Nada de esto sale de tu dispositivo a menos que <em>tú</em> actives la copia en la nube (ver §4).</p>
+
+<h2>3. Permisos que pedimos y por qué</h2>
+
+<table>
+  <tr><th>Permiso</th><th>Para qué se usa</th></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Hablar con tu servidor Emby, las APIs opcionales TMDB / fútbol, Google Play Billing y (solo si lo activas) la copia a Google Drive</td></tr>
+  <tr><td><code>WRITE_EPG_DATA</code> / <code>READ_TV_LISTINGS</code></td><td>Publicar y leer los canales de la pantalla de inicio (las filas que ves en el launcher)</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Notificaciones de inicio y goles de partidos de fútbol (solo si las activas)</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code></td><td>Polling de partidos de fútbol en directo para que la notificación de gol se dispare con fiabilidad</td></tr>
+  <tr><td><code>BIND_VOICE_INTERACTION</code></td><td>Suprime el overlay del Asistente del sistema para que el flujo de búsqueda/voz del propio launcher pueda ejecutarse</td></tr>
+  <tr><td><code>BIND_DREAM_SERVICE</code></td><td>Provee el salvapantallas opcional con backdrops de Emby + vídeos Aerial</td></tr>
+  <tr><td>AccessibilityService</td><td>Solo funciones opcionales: control remoto del Oppo, detección de inactividad, remapeo de botones del mando. El servicio no lee contenido de pantalla más allá de detectar las teclas que pulsas</td></tr>
+  <tr><td><code>CAMERA</code> (solo app Setup)</td><td>El escáner de QR empareja la app móvil con el launcher de la TV. El SDK Google Code Scanner se ejecuta en el sistema; no se transmiten imágenes</td></tr>
+</table>
+
+<h2>4. Servicios de terceros</h2>
+
+<p>Las apps integran varios servicios de terceros, todos <em>opcionales</em> y activados explícitamente por ti:</p>
+
+<ul>
+  <li><strong>Google Play Billing</strong> — usado para verificar compras Premium. Regulado por <a href="https://policies.google.com/privacy">la política de privacidad de Google</a>.</li>
+  <li><strong>API de Google Drive</strong> — solo se invoca si activas la copia en la nube. Guarda un único archivo JSON con tus ajustes en la carpeta de app de tu propio Drive. Nosotros nunca lo vemos. Regulado por la política de privacidad de Google.</li>
+  <li><strong>Tu servidor Emby</strong> — el plugin se conecta a la URL que tú indiques. La comunicación va directamente entre tu dispositivo y tu servidor.</li>
+  <li><strong>The Movie Database (TMDB)</strong> — opcional. Solo se llama si proporcionas tu propia API key. <a href="https://www.themoviedb.org/privacy-policy">Política de privacidad de TMDB</a>.</li>
+  <li><strong>football-data.org / api-football.com</strong> — opcionales. Solo se llaman si proporcionas tu propia API key. Reguladas por sus respectivas políticas de privacidad.</li>
+  <li><strong>Apple Aerials</strong> — el salvapantallas obtiene vídeos 4K de naturaleza disponibles públicamente alojados por Apple. Sin cuenta, sin identificador.</li>
+</ul>
+
+<h2>5. Datos que vendemos o compartimos</h2>
+
+<p><strong>Ninguno.</strong> Nunca vendemos, compartimos, licenciamos ni transmitimos datos de usuarios a terceros con fines publicitarios, analíticos ni de cualquier otro tipo.</p>
+
+<h2>6. Menores</h2>
+
+<p>Las apps no están dirigidas a menores de 13 años. No tienen verificación de edad porque no recogen datos personales.</p>
+
+<h2>7. Tus derechos</h2>
+
+<p>Como no almacenamos datos personales sobre ti, no hay nada que podamos eliminar, exportar o corregir por nuestra parte. Puedes borrar todo desinstalando la app o, para la función de copia en la nube, borrando el archivo JSON de la carpeta de app de tu propio Google Drive.</p>
+
+<h2>8. Cambios a esta política</h2>
+
+<p>Si alguna vez cambiamos cómo las apps gestionan datos, actualizaremos esta página y la fecha de "Última actualización". Los cambios materiales también se destacarán en el changelog dentro de la app.</p>
+
+<h2>9. Contacto</h2>
+
+<p>Preguntas, problemas o solicitudes:</p>
+
+<ul>
+  <li>Email: <a href="mailto:goku89edge@gmail.com">goku89edge@gmail.com</a></li>
+  <li>GitHub Issues (tras el lanzamiento): enlazado desde cada listing de Play Store</li>
+</ul>
+
+<footer>
+  <p>© 2026 GTD TV Studio · Alojado en GitHub Pages · <a href="index.html">English version</a></p>
+</footer>
+
+</body>
+</html>
