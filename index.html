@@ -32,7 +32,7 @@
 
 <header>
   <h1>GTD TV Studio — Privacy Policy</h1>
-  <p>Effective date: 10 May 2026 · Last updated: 10 May 2026</p>
+  <p>Effective date: 10 May 2026 · Last updated: 23 May 2026</p>
   <div class="lang">
     <a class="active" href="index.html">English</a>
     <a href="es.html">Español</a>
@@ -41,11 +41,20 @@
 
 <p>This page covers <strong>GTD Launcher</strong>, <strong>GTD Plugin for Emby</strong> and <strong>GTD Setup</strong> (collectively, <em>"the apps"</em>), all developed and published by <strong>GTD TV Studio</strong>.</p>
 
-<p>Short version: <strong>we do not collect, transmit or sell any personal data.</strong> Everything you configure stays on your device. Optional features that talk to third parties (Google Drive, Emby, TMDB, football APIs) only do so when <em>you</em> enable them, and you control the credentials.</p>
+<p>Short version: <strong>we do not collect, transmit or sell any personal data.</strong> Everything you configure stays on your device. The launcher does send anonymous crash reports and basic app-usage telemetry to Google's Firebase service so we can fix bugs and understand which features are used — never any content of your library, searches or credentials. Optional features that talk to third parties (Google Drive, Emby, TMDB, football APIs) only do so when <em>you</em> enable them, and you control the credentials.</p>
 
 <h2>1. Data we collect about you</h2>
 
-<p><strong>None.</strong> The apps do not have a backend, telemetry, analytics, crash reporter, advertising SDK or user account system. We never see what you do with the apps.</p>
+<p>The <strong>GTD Launcher</strong> uses <strong>Firebase Crashlytics</strong> and <strong>Firebase Analytics</strong> to receive anonymous crash diagnostics and basic usage telemetry. The <strong>GTD Plugin for Emby</strong> and the <strong>GTD Setup</strong> companion include neither and collect nothing.</p>
+
+<p>What's transmitted from the launcher:</p>
+
+<ul>
+  <li><strong>Crashlytics</strong> — when the app crashes: stack trace, native crash dump, device manufacturer + model, Android version, free memory at the time of the crash, app version, an anonymous installation UUID (regenerated when you uninstall). No account, no email, no library content, no search queries.</li>
+  <li><strong>Analytics</strong> — anonymous app-instance ID, country (derived from IP, not stored), app open / session events, app version, OS version, device brand + model. Used to see things like "how many users updated to the latest version" or "is the new search screen actually used". No personal identifiers.</li>
+</ul>
+
+<p>Both can be disabled at the OS level via <em>Settings → Privacy → Usage &amp; diagnostics</em> on Android TV. There is no in-app toggle yet — we may add one.</p>
 
 <h2>2. Data the apps store on your device</h2>
 
@@ -85,11 +94,12 @@
   <li><strong>The Movie Database (TMDB)</strong> — optional. Only called if you provide your own API key. <a href="https://www.themoviedb.org/privacy-policy">TMDB privacy policy</a>.</li>
   <li><strong>football-data.org / api-football.com</strong> — optional. Only called if you provide your own API key. Governed by their respective privacy policies.</li>
   <li><strong>Apple Aerials</strong> — the screensaver fetches publicly-available 4K nature videos hosted by Apple. No account, no identifier.</li>
+  <li><strong>Firebase Crashlytics + Firebase Analytics</strong> (launcher only) — Google's crash-reporting and basic-usage-analytics services, used to fix bugs and understand which features are used. Data is anonymous (see §1 for the exact fields). Governed by <a href="https://firebase.google.com/support/privacy">Google's Firebase Privacy Policy</a>.</li>
 </ul>
 
 <h2>5. Data we sell or share</h2>
 
-<p><strong>Nothing.</strong> We never sell, share, license or transmit user data to any third party for advertising, analytics or any other purpose.</p>
+<p><strong>Nothing for advertising or to humans.</strong> The crash + usage telemetry described in §1 is processed by Google's Firebase pipeline strictly for the purpose of improving the launcher. We never sell, share, license or hand-off data to any other third party for advertising or analytics.</p>
 
 <h2>6. Children</h2>
 
@@ -97,7 +107,7 @@
 
 <h2>7. Your rights</h2>
 
-<p>Because we hold zero personal data about you, there's nothing for us to delete, export or correct on our side. You can wipe everything by uninstalling the app or, for the cloud-backup feature, by deleting the JSON file from your own Google Drive's app folder.</p>
+<p>The crash + usage telemetry (see §1) is keyed only to an anonymous installation UUID and an anonymous app-instance ID — both regenerate every time you uninstall and reinstall, so there's no persistent link to your identity. You can wipe everything by uninstalling the app; for the cloud-backup feature, delete the JSON file from your own Google Drive's app folder. We hold no other personal data about you, so there's nothing else to delete, export or correct on our side.</p>
 
 <h2>8. Changes to this policy</h2>
 
