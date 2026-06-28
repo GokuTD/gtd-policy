@@ -32,7 +32,7 @@
 
 <header>
   <h1>GTD TV Studio — Privacy Policy</h1>
-  <p>Effective date: 10 May 2026 · Last updated: 23 May 2026</p>
+  <p>Effective date: 10 May 2026 · Last updated: 28 June 2026</p>
   <div class="lang">
     <a class="active" href="index.html">English</a>
     <a href="es.html">Español</a>
@@ -41,7 +41,7 @@
 
 <p>This page covers <strong>GTD Launcher</strong>, <strong>GTD Plugin for Emby</strong> and <strong>GTD Setup</strong> (collectively, <em>"the apps"</em>), all developed and published by <strong>GTD TV Studio</strong>.</p>
 
-<p>Short version: <strong>we do not collect, transmit or sell any personal data.</strong> Everything you configure stays on your device. The launcher does send anonymous crash reports and basic app-usage telemetry to Google's Firebase service so we can fix bugs and understand which features are used — never any content of your library, searches or credentials. Optional features that talk to third parties (Google Drive, Emby, TMDB, football APIs) only do so when <em>you</em> enable them, and you control the credentials.</p>
+<p>Short version: <strong>we do not collect, transmit or sell any personal data.</strong> Everything you configure stays on your device. The launcher does send anonymous crash reports and basic app-usage telemetry to Google's Firebase service so we can fix bugs and understand which features are used — never any content of your library, searches or credentials. Optional features that talk to third parties (Google Drive, Emby, TMDB, football APIs, the weather widget, YouTube search) only do so when <em>you</em> enable or use them, and you control the credentials.</p>
 
 <h2>1. Data we collect about you</h2>
 
@@ -73,7 +73,7 @@
 
 <table>
   <tr><th>Permission</th><th>Used for</th></tr>
-  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Talking to your Emby server, optional TMDB / football APIs, Google Play Billing, and (only if you enable it) Google Drive backup</td></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Talking to your Emby server, optional TMDB / football APIs, Google Play Billing, the weather widget (approximate location from your IP), YouTube search, and (only if you enable it) Google Drive backup</td></tr>
   <tr><td><code>WRITE_EPG_DATA</code> / <code>READ_TV_LISTINGS</code></td><td>Publishing and reading the home-screen channels (the rows you see on the launcher)</td></tr>
   <tr><td><code>POST_NOTIFICATIONS</code></td><td>Football match start / goal notifications (only if you enable them)</td></tr>
   <tr><td><code>FOREGROUND_SERVICE</code></td><td>Live football match polling so the goal notification fires reliably</td></tr>
@@ -93,6 +93,8 @@
   <li><strong>Your Emby server</strong> — the plugin connects to whatever URL you provide. Communication goes directly between your device and your server.</li>
   <li><strong>The Movie Database (TMDB)</strong> — optional. Only called if you provide your own API key. <a href="https://www.themoviedb.org/privacy-policy">TMDB privacy policy</a>.</li>
   <li><strong>football-data.org / api-football.com</strong> — optional. Only called if you provide your own API key. Governed by their respective privacy policies.</li>
+  <li><strong>Weather</strong> (launcher, optional) — if you enable the weather widget, the launcher looks up your <em>approximate</em> location from your IP address via <a href="https://ipwho.is">ipwho.is</a> (over HTTPS) and fetches the forecast from <a href="https://open-meteo.com">Open-Meteo</a>. No GPS / precise location, no account. Disable the widget to stop this.</li>
+  <li><strong>YouTube</strong> (launcher) — when you use search, your query is sent to YouTube (Google) to return results. No account is used. Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
   <li><strong>Apple Aerials</strong> — the screensaver fetches publicly-available 4K nature videos hosted by Apple. No account, no identifier.</li>
   <li><strong>Firebase Crashlytics + Firebase Analytics</strong> (launcher only) — Google's crash-reporting and basic-usage-analytics services, used to fix bugs and understand which features are used. Data is anonymous (see §1 for the exact fields). Governed by <a href="https://firebase.google.com/support/privacy">Google's Firebase Privacy Policy</a>.</li>
 </ul>
