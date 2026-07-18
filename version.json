@@ -1,32 +1,4 @@
 {
-  "launcher": 102,
-  "plugin": 16,
-  "launcher_name": "2.1.0",
-  "plugin_name": "1.1.5",
-  "launcher_notes": {
-    "en": "Sharper cards across the whole home + new Poster Quality setting, live icon packs, status bar size & colour, Emby library order, smoother scrolling.",
-    "es": "Cards más nítidas en todo el home + nuevo ajuste Calidad de pósters, icon packs en vivo, tamaño y color de la barra de estado, orden de biblioteca Emby, scroll más suave.",
-    "de": "Schärfere Karten im ganzen Homescreen + neue Posterqualität, Live-Icon-Packs, Statusleisten-Größe & -Farbe, Emby-Bibliotheksreihenfolge, flüssigeres Scrollen.",
-    "fr": "Cartes plus nettes sur tout l'accueil + réglage Qualité des affiches, packs d'icônes en direct, taille et couleur de la barre d'état, ordre de bibliothèque Emby, défilement plus fluide.",
-    "it": "Schede più nitide in tutta la home + nuova Qualità poster, pacchetti icone live, dimensione e colore barra di stato, ordine libreria Emby, scorrimento più fluido.",
-    "pl": "Ostrzejsze karty w całym ekranie głównym + Jakość plakatów, paczki ikon na żywo, rozmiar i kolor paska stanu, kolejność biblioteki Emby, płynniejsze przewijanie.",
-    "pt": "Cartões mais nítidos em todo o ecrã inicial + Qualidade dos cartazes, pacotes de ícones em direto, tamanho e cor da barra de estado, ordem da biblioteca Emby, deslocamento mais suave.",
-    "ro": "Carduri mai clare pe tot ecranul principal + Calitate postere, pachete de pictograme live, dimensiune și culoare bară de stare, ordinea bibliotecii Emby, derulare mai fluidă.",
-    "ru": "Более чёткие карточки по всему главному экрану + Качество постеров, наборы значков на лету, размер и цвет строки состояния, порядок библиотеки Emby, плавнее прокрутка.",
-    "uk": "Чіткіші картки на всьому головному екрані + Якість постерів, набори значків наживо, розмір і колір рядка стану, порядок бібліотеки Emby, плавніша прокрутка.",
-    "zh": "整个主界面卡片更清晰 + 新增海报质量设置、实时图标包、状态栏大小和颜色、Emby 媒体库排序、滚动更流畅。"
-  },
-  "plugin_notes": {
-    "en": "Sharper Emby posters, smarter TMDB matching for other apps, per-library order & filters, GL wallpaper notice on low-end TVs, faster images.",
-    "es": "Pósters de Emby más nítidos, mejor emparejamiento TMDB para otras apps, orden y filtros por biblioteca, aviso GL en TVs flojas, imágenes más rápidas.",
-    "de": "Schärfere Emby-Poster, besseres TMDB-Matching für andere Apps, Reihenfolge & Filter pro Bibliothek, GL-Hinweis auf schwachen TVs, schnellere Bilder.",
-    "fr": "Affiches Emby plus nettes, meilleure correspondance TMDB pour d'autres apps, ordre et filtres par bibliothèque, avertissement GL sur TV faibles, images plus rapides.",
-    "it": "Poster Emby più nitidi, miglior TMDB per altre app, ordine e filtri per libreria, avviso GL su TV deboli, immagini più veloci.",
-    "pl": "Ostrzejsze plakaty Emby, lepsze TMDB dla innych aplikacji, kolejność i filtry wg biblioteki, ostrzeżenie GL na słabych TV, szybsze obrazy.",
-    "pt": "Cartazes Emby mais nítidos, melhor TMDB para outras apps, ordem e filtros por biblioteca, aviso GL em TVs fracas, imagens mais rápidas.",
-    "ro": "Postere Emby mai clare, potrivire TMDB mai bună pentru alte aplicații, ordine și filtre pe bibliotecă, avertizare GL pe TV slabe, imagini mai rapide.",
-    "ru": "Более чёткие постеры Emby, лучше TMDB для других приложений, порядок и фильтры по библиотеке, предупреждение GL на слабых ТВ, быстрее изображения.",
-    "uk": "Чіткіші постери Emby, краще TMDB для інших додатків, порядок і фільтри за бібліотекою, попередження GL на слабких ТВ, швидші зображення.",
-    "zh": "Emby 海报更清晰，其他应用的 TMDB 匹配更智能，按媒体库排序和筛选，低端电视 GL 提示，图片更快。"
-  }
+  "launcher": 101,
+  "plugin": 15
 }
