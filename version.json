@@ -1,20 +1,20 @@
 {
-  "launcher": 112,
+  "launcher": 113,
   "plugin": 34,
-  "launcher_name": "2.2.9",
+  "launcher_name": "2.2.10",
   "plugin_name": "1.3.12",
   "launcher_notes": {
-    "en": "- Fixed: coming back to the home screen or leaving a menu could freeze it for about a second, and the focus then jumped several cards at once.",
-    "es": "- Arreglado: al volver a la pantalla de inicio o salir de un menú podía quedarse parada casi un segundo, y luego el foco saltaba varias tarjetas de golpe.",
-    "de": "- Behoben: Beim Zurückkehren zum Startbildschirm oder Verlassen eines Menüs konnte er kurz einfrieren, danach sprang der Fokus mehrere Karten weiter.",
-    "fr": "- Corrigé : en revenant à l'accueil ou en quittant un menu, l'écran pouvait se figer une seconde, puis le focus sautait plusieurs cartes d'un coup.",
-    "it": "- Risolto: tornando alla schermata iniziale o uscendo da un menu poteva bloccarsi per circa un secondo, e poi il focus saltava più schede insieme.",
-    "pl": "- Naprawiono: po powrocie na ekran główny lub wyjściu z menu mógł zawiesić się na sekundę, a potem fokus przeskakiwał o kilka kafelków naraz.",
-    "pt": "- Corrigido: ao voltar ao ecrã inicial ou sair de um menu podia bloquear cerca de um segundo, e depois o foco saltava vários cartões de uma vez.",
-    "ro": "- Remediat: la revenirea pe ecranul principal sau la ieșirea dintr-un meniu putea îngheța o secundă, iar apoi focusul sărea peste mai multe carduri.",
-    "ru": "- Исправлено: при возврате на главный экран или выходе из меню он мог зависнуть примерно на секунду, а затем фокус перескакивал сразу через несколько карточек.",
-    "uk": "- Виправлено: під час повернення на головний екран або виходу з меню він міг зависнути на секунду, а потім фокус перестрибував кілька карток одразу.",
-    "zh": "- 修复：返回主屏幕或退出菜单时可能卡顿约一秒，随后焦点会一次跳过好几张卡片。"
+    "en": "- Fixed: CSS wallpaper themes showed a black screen with no background and no info card. Football wallpapers were affected too.\n- The wallpaper now refreshes without competing with your remote, so the focus no longer jumps ahead while you browse.",
+    "es": "- Arreglado: los temas de fondo CSS salían en negro, sin fondo ni tarjeta de información. También afectaba a los fondos de fútbol.\n- El fondo se refresca sin competir con el mando, así que el foco ya no pega saltos mientras navegas.",
+    "de": "- Behoben: CSS-Hintergrundthemen zeigten einen schwarzen Bildschirm ohne Hintergrund und ohne Infokarte. Auch Fußball-Hintergründe waren betroffen.\n- Der Hintergrund aktualisiert sich jetzt, ohne mit der Fernbedienung zu konkurrieren: Der Fokus springt beim Blättern nicht mehr vor.",
+    "fr": "- Corrigé : les thèmes de fond CSS affichaient un écran noir, sans fond ni fiche d'information. Les fonds football étaient aussi touchés.\n- Le fond se rafraîchit sans concurrencer la télécommande : le focus ne saute plus pendant la navigation.",
+    "it": "- Risolto: i temi di sfondo CSS mostravano uno schermo nero, senza sfondo né scheda informativa. Anche gli sfondi calcio erano interessati.\n- Lo sfondo si aggiorna senza competere con il telecomando: il focus non salta più mentre navighi.",
+    "pl": "- Naprawiono: motywy tapet CSS pokazywały czarny ekran, bez tła i bez karty z informacjami. Dotyczyło to też tapet piłkarskich.\n- Tapeta odświeża się bez rywalizacji z pilotem, więc fokus nie przeskakuje już podczas przeglądania.",
+    "pt": "- Corrigido: os temas de fundo CSS mostravam um ecrã preto, sem fundo nem cartão de informação. Os fundos de futebol também eram afetados.\n- O fundo atualiza-se sem competir com o comando, por isso o foco já não salta enquanto navega.",
+    "ro": "- Remediat: temele de fundal CSS afișau un ecran negru, fără fundal și fără cardul cu informații. Erau afectate și fundalurile de fotbal.\n- Fundalul se reîmprospătează fără să concureze cu telecomanda, așa că focusul nu mai sare în timp ce navighezi.",
+    "ru": "- Исправлено: CSS-темы фона показывали чёрный экран без фона и без карточки с информацией. Это касалось и футбольных фонов.\n- Фон обновляется, не конкурируя с пультом, поэтому фокус больше не перескакивает при навигации.",
+    "uk": "- Виправлено: CSS-теми фону показували чорний екран без фону та без картки з інформацією. Це стосувалося й футбольних фонів.\n- Фон оновлюється, не конкуруючи з пультом, тож фокус більше не перестрибує під час навігації.",
+    "zh": "- 修复：CSS 壁纸主题显示为黑屏，没有背景也没有信息卡片。足球壁纸同样受影响。\n- 壁纸刷新不再与遥控器争抢，浏览时焦点不会再往前跳。"
   },
   "plugin_notes": {
     "en": "- Fixed: if the screensaver came on halfway through a film, nothing you watched after it was saved. You now resume exactly where you left off.\n- Fixed: playback progress could be rejected by the server and lost without warning.\n- The home rows no longer refresh over and over when other people are watching on the same server.\n- The next-episode card now shows up reliably.\n- Ocean and Halo wallpapers: better looking, lighter.",
